@@ -39,5 +39,10 @@
                 "document": "hamis\\document\\Facades\\document"
             }
         }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php artisan storage:link"
+        ]
     }
 }
