@@ -15,6 +15,12 @@ class CreateDocumentsTable extends Migration
     {
         Schema::create('documents', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('document_group_id');
+            $table->string('name', 50);
+            $table->text('description')->nullable();
+            $table->smallInteger('isrecurring')->default(0);
+            $table->smallInteger('ismandatory')->default(1);
+            $table->smallInteger('isactive')->default(1);
             $table->timestamps();
         });
     }
