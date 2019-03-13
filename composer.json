@@ -1,0 +1,43 @@
+{
+    "name": "hamis/document",
+    "description": ":Package for organizing uploaded files in a readable and organised way in laravel framework",
+    "license": "none",
+    "authors": [
+        {
+            "name": "Hamis Juma",
+            "email": "hamisjuma1@gmail.com",
+            "homepage": "https://github.com/hamis-juma"
+        }
+    ],
+    "homepage": "https://github.com/hamis/document",
+    "keywords": ["Laravel", "document"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "hamis\\document\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "hamis\\document\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "hamis\\document\\documentServiceProvider"
+            ],
+            "aliases": {
+                "document": "hamis\\document\\Facades\\document"
+            }
+        }
+    }
+}
