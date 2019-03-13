@@ -9,12 +9,12 @@
 namespace hamis\document\models\traits\relationship;
 
 
-use Hamis\Document\models\Document;
+use Hamis\Document\models\document;
 
-trait DocumentGroupRelationship
+trait documentGroupRelationship
 {
     public function document()
     {
-        return $this->hasMany(Document::class);
+        return $this->hasMany(document::class);
     }
 }

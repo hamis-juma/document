@@ -8,8 +8,7 @@
 
 namespace hamis\document\models\traits\attribute;
 
-
-trait DocumentGroupAttribute
+trait documentResourceAttribute
 {
 
 }

@@ -9,18 +9,18 @@
 namespace hamis\document\models\traits\relationship;
 
 
-use Hamis\Document\models\DocumentGroup;
-use Hamis\Document\models\DocumentResource;
+use Hamis\Document\models\documentGroup;
+use Hamis\Document\models\documentResource;
 
-trait DocumentRelationship
+trait documentRelationship
 {
     public function documentGroup()
     {
-        return $this->belongsTo(DocumentGroup::class);
+        return $this->belongsTo(documentGroup::class);
     }
 
     public function documentResource()
     {
-        return $this->hasMany(DocumentResource::class);
+        return $this->hasMany(documentResource::class);
     }
 }

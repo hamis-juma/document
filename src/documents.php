@@ -9,7 +9,7 @@
 namespace Hamis\Document;
 
 
-trait Documents
+trait documents
 {
 
 }

@@ -9,7 +9,7 @@
 namespace hamis\document\models\traits\relationship;
 
 
-trait DocumentResourceRelationship
+trait documentResourceRelationship
 {
 
 }
